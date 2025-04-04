@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadinda for MYOB</title>
+    <link
+      href="https://apply.holbertonschool.com/level2/school.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="behavior.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="works_on_smartphone">
+    <header>
+      <div class="right">
+        <a
+          class="outlined-button"
+          href="https://x.com/intent/post?ref_src=twsrc%5Etfw&url=http%3A%2F%2F52.47.148.177%2F"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-twitter"></i>&nbsp; Tweet
+        </a>
+        <a
+          class="outlined-button"
+          href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F52.47.148.177%2F"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-facebook-f"></i>&nbsp; Share
+        </a>
+      </div>
+      <!-- Navigation Links -->
+      <ul class="outline-border">
+        <li class="logo">༻𝓝༺</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+      </ul>
+    </header>
+    <main class="outline-border">
+      <article>
+        <h1>Learn Personal Finance</h1>
+        <div id="game-container">
+          <!-- Start Menu -->
+          <div id="menu-state" class="game-state">
+            <h2>We'll learn about some terms related to Personal Finance</h1>
+            <button id="start-button" class="outlined-button">Start</button>
+          </div>
+
+          <!-- Flashcard -->
+          <div id="flashcard-state" class="game-state hidden">
+            <div id="flashcard">
+              <div class="flashcard-inner">
+                <div class="flashcard-front"></div>
+                <div class="flashcard-back"></div>
+              </div>
+            </div>
+            <div id="flashcard-controls">
+              <button class="outlined-button" id="prev-button"><</button>
+              <button class="outlined-button" id="flip-button">Flip</button>
+              <button class="outlined-button" id="next-button">></button>
+            </div>
+            <button class="outlined-button" id="quiz-button">Quiz me!</button>
+          </div>
+
+          <!-- Quiz -->
+          <div id="quiz-state" class="game-state hidden">
+            <p id="question"></p>
+            <input
+              type="text"
+              id="answer-input"
+              placeholder="Enter answer"
+            />
+            <button class="outlined-button" id="submit-button">Submit</button>
+            <p id="feedback"></p>
+            <p id="score">Score: 0</p>
+          </div>
+
+          <!-- Final Score State -->
+          <div id="final-score-state" class="game-state hidden">
+            <h3>Game Over!</h2>
+            <p id="final-score"></p>
+            <button class="outlined-button" id="restart-button">
+              Play Again
+            </button>
+          </div>
+        </div>
+        <script src="game.js"></script>
+      </article>
+      <aside>
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+          (function () {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://myob-nadinda.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Made by Nadinda Rachmat
+      </p>
+    </footer>
+  </body>
+</html>
